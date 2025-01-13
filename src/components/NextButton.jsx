@@ -1,4 +1,7 @@
-function NextButton({ dispatch, answer, numQuestions, index }) {
+import { useQuizData } from "./context/QuizProvider";
+
+function NextButton({ numQuestions }) {
+  const { dispatch, answer, index } = useQuizData();
   if (answer === null) return null;
 
   function handleClick() {

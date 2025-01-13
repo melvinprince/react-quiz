@@ -1,4 +1,7 @@
-function StartScreen({ length, dispatch }) {
+import { useQuizData } from "./context/QuizProvider";
+
+function StartScreen() {
+  const { length, dispatch } = useQuizData();
   return (
     <div className="start">
       <h2>Welcome to the react quiz</h2>
