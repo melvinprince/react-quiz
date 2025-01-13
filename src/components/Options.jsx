@@ -1,4 +1,7 @@
-function Options({ question, dispatch, answer }) {
+import { useQuizData } from "./context/QuizProvider";
+
+function Options({ question, answer }) {
+  const { dispatch } = useQuizData();
   const hasAnswered = answer !== null;
 
   return (

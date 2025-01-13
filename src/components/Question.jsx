@@ -1,6 +1,10 @@
+import { useQuizData } from "./context/QuizProvider";
 import Options from "./Options";
 
-function Question({ question, dispatch, answer }) {
+function Question() {
+  const { questions, dispatch, answer, index } = useQuizData();
+  const question = questions[index];
+
   return (
     <div>
       <h4>{question.question}</h4>
