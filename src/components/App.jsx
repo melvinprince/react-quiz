@@ -10,7 +10,7 @@ import Progress from "./Progress.jsx";
 import FinishedScreen from "./FinishedScreen.jsx";
 import Footer from "./Footer.jsx";
 import Timer from "./Timer.jsx";
-import { useQuizData } from "./context/QuizProvider.jsx";
+import { useQuizData } from "../context/QuizProvider.jsx";
 
 export default function App() {
   const { questions, dispatch, status } = useQuizData();

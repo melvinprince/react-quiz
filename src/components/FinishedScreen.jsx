@@ -1,4 +1,4 @@
-import { useQuizData } from "./context/QuizProvider";
+import { useQuizData } from "../context/QuizProvider";
 
 function FinishedScreen({ totalPpoints }) {
   const { points, dispatch } = useQuizData();

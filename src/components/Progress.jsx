@@ -1,4 +1,4 @@
-import { useQuizData } from "./context/QuizProvider";
+import { useQuizData } from "../context/QuizProvider";
 
 function Progress({ numQuestions, totalPoints }) {
   const { index, points, answer } = useQuizData();

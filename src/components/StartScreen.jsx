@@ -1,4 +1,4 @@
-import { useQuizData } from "./context/QuizProvider";
+import { useQuizData } from "../context/QuizProvider";
 
 function StartScreen() {
   const { length, dispatch } = useQuizData();

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useQuizData } from "./context/QuizProvider";
+import { useQuizData } from "../context/QuizProvider";
 
 function Timer() {
   const { dispatch, secondsRemaining } = useQuizData();
